@@ -1,24 +1,26 @@
-# DL-Project-Lung-Cancer-Detection
-The objective is to classify (3 types) and diagnose, if the patient have cancer or not with the help of AI model. So that the information about the type of cancer and the way of treatment can be provided to them.
+# DL Project Lung Cancer Detection
+
+## Objective:
+The goal of this project is to develop an AI model capable of classifying three types of lung cancer and diagnosing whether a patient has cancer or not. This information can then be used to provide patients with details about their specific type of cancer and potential treatment options.
+
+## Dataset:
+The dataset is available on Kaggle: [Chest CT Scan Images](https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images). It contains images in JPG or PNG format, which can be directly used for model training. The dataset includes images of three types of lung cancer: Adenocarcinoma, Large cell carcinoma, and Squamous cell carcinoma, along with images of normal lung cells. The data is organized into three folders: train, test, and valid, each containing subfolders for the three cancer types and normal CT-Scan images.
+
+## Project Outline:
+1. **Import Libraries and Set Up Paths**: Initialize the environment by importing necessary libraries and setting up paths to the dataset.
+2. **Load Dataset**: Load the dataset from the specified directories.
+3. **Data Preprocessing**: Perform preprocessing steps such as resizing images, normalization, and splitting data into training, validation, and test sets.
+4. **Build a Basic CNN Model**: Construct and train an initial Convolutional Neural Network (CNN) model. Evaluate its performance to identify issues like overfitting.
+5. **Data Augmentation**: Apply data augmentation techniques to increase the diversity of the training data and improve model generalization.
+6. **Improved Network Architecture**: Develop a more complex network with additional convolutional layers and dropout layers to prevent overfitting.
+7. **Transfer Learning**: Utilize pre-trained models like VGG16 and a customized SERES VGG16 model to leverage existing knowledge and improve performance.
+8. **Training and Evaluation**: Train and evaluate both the improved network and the transfer learning models.
+9. **Save the Trained Model**: Save the best-performing model for future use.
+
+By following these steps, the aim is to create a robust model capable of accurately diagnosing lung cancer and providing valuable insights into its type for better treatment planning.
 
 
-## About the Dataset:
-This dataset is available on Kaggle on the link https://www.kaggle.com/datasets/mohamedhanyyy/chest-ctscan-images
-
-Images are in jpg or png format and thus can be used directly to fit the model. This dataset contain 3 chest cancer types: Adenocarcinoma,Large cell carcinoma, Squamous cell carcinoma, and 1 folder for the normal cell. Data folder consists of train, test, and valid folders. Each folder contain 3 folders of different chest cancer types (adenocarcinoma,large cell carcinoma,squamous cell carcinoma) and 1 folder of normal CT-Scan images (normal).
-
-
-## Outline of Project:
-1. Import Libraries, Set up path and Load dataset.
-2. Data Preprocessing.
-3. Build a basic CNN model, Train and evaluate it. Model was overfitting on train data.
-4. Data Augmentation to increase the diversity of the training data.
-5. Use Improved Network Architecture which is a deeper network with more convolutional layers and additional dropout layers to prevent overfitting.
-6. Transfer Learning Using VGG16 model and Customized SERES VGG16 Model.
-7. Train and evaluate for both models.
-8. Save the trained model.
-
-
+The Customized SERES VGG16 model performs best with an accuracy of 89%.
 
 
 
